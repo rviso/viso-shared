@@ -1,6 +1,6 @@
 {
   "extends": [ "@rviso/eslint-config" ],
-  "ignorePatterns": [ "dist/", "lib/", "node_modules/" , "coverage/" , "__tests__/" , "es/" ],
+  "ignorePatterns": [ "dist/", "lib/", "node_modules/" , "coverage/" , "__tests__/" , "es/", "lerna.json" ],
   "rules": {
     "@typescript-eslint/brace-style": "off",
     "@typescript-eslint/indent": "off",
