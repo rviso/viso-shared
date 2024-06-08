@@ -15,6 +15,7 @@ export const chineseSymbols: Record<string, string> = {
   '<': '《',
   '>': '》',
   '"': '“',
+  // eslint-disable-next-line @typescript-eslint/quotes
   "'": '‘',
   '`': '·',
   '-': '—',
@@ -41,7 +42,7 @@ export const chineseSymbols: Record<string, string> = {
   '6': '六',
   '7': '七',
   '8': '八',
-  '9': '九'
+  '9': '九',
 }
 
 /**
@@ -51,11 +52,7 @@ export const chineseSymbols: Record<string, string> = {
  * @param replaceValue 替换的字符串
  * @returns 返回替换后的字符串
  */
-export const replaceAll = (
-  str: string,
-  searchValue: string | RegExp,
-  replaceValue: string
-) => {
+export const replaceAll = (str: string, searchValue: string | RegExp, replaceValue: string) => {
   if (typeof searchValue === 'string') {
     return str.split(searchValue).join(replaceValue)
   }

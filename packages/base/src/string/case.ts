@@ -64,9 +64,7 @@ export const pascalPackageNameCase = (packageName: string, prefix = '') => {
   // 取出/后的字符串
   const arr = packageName.split('/')
   // 取出最后一个字符串
-  const name = arr[arr.length - 1].replace(/-([a-z])/g, (all, letter) =>
-    letter.toUpperCase()
-  )
+  const name = arr[arr.length - 1].replace(/-([a-z])/g, (all, letter) => letter.toUpperCase())
   // 首字母大写
   return prefix + name.charAt(0).toUpperCase() + name.slice(1)
 }
