@@ -1,4 +1,4 @@
-import type { DeepPartial } from '@veditor/types'
+import type { DeepPartial } from '@viso/types'
 import { isNotEmpty } from '../is'
 
 export function shouldIncludeProperty<T>(

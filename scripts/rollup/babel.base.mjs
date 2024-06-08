@@ -26,7 +26,7 @@ export default {
     // 转换 Object.assign( 方法
     '@babel/plugin-transform-object-assign',
     // 支持类属性的提案 -- 作用是将类似于 class A { a = 1 } 转换为 class A { constructor( { this.a = 1 } }
-    ['@babel/plugin-transform-class-properties"'],
+    ['@babel/plugin-transform-class-properties'],
     // 转换计算属性 -- 作用是将类似于 const a = { ["b" + "c"]: 1 } 转换为 const a = { "bc": 1 }
     '@babel/plugin-transform-computed-properties',
     [

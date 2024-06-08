@@ -2,7 +2,7 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
-import typescript from 'rollup-plugin-typescript2'
+import typescript from '@rollup/plugin-typescript'
 import json from '@rollup/plugin-json'
 import commonjs from '@rollup/plugin-commonjs'
 import clear from 'rollup-plugin-clear'
@@ -41,25 +41,21 @@ const getTypescript = (name, type) => {
   })
   return [
     typescript({
-      tsconfig: path.resolve(dep.fullPath, 'tsconfig.json'),
-      tsconfigOverride: {
-        compilerOptions: {
-          paths,
-
-          /* Bundler mode */
-          strict: false,
-          skipLibCheck: true,
-          sourceMap: false,
-          declaration: false,
-          declarationMap: false,
-          noImplicitReturns: false,
-          noImplicitAny: false,
-          noUnusedLocals: false,
-          noUnusedParameters: false,
-          strictNullChecks: false,
-        },
-        exclude: ['node_modules', 'dist', 'es', 'lib', 'bin', '**/__tests__', '**/.test.ts'],
+      compilerOptions: {
+        paths,
+        /* Bundler mode */
+        strict: false,
+        skipLibCheck: true,
+        sourceMap: false,
+        declaration: false,
+        declarationMap: false,
+        noImplicitReturns: false,
+        noImplicitAny: false,
+        noUnusedLocals: false,
+        noUnusedParameters: false,
+        strictNullChecks: false,
       },
+      exclude: ['node_modules', 'dist', 'es', 'lib', 'bin', '**/__tests__', '**/.test.ts'],
     }),
   ]
 }
@@ -79,18 +75,16 @@ const getClean = (name, type) => {
 }
 
 const getBabel = (name, type) => {
-  const dep = deps[name]
   const extensions = ['.ts', 'tsx', '.js', 'jsx']
-  if (type === 'dist') {
-    return [
-      babel({
-        configFile: `${__dirname}/babel.base.mjs`,
-        extensions,
-        babelHelpers: 'bundled', // 生成的代码中不再包含babel的辅助函数，而是直接引用babel的辅助函数
-        exclude: 'node_modules/**',
-      }),
-    ]
-  }
+
+  return [
+    babel({
+      configFile: `${__dirname}/babel.base.mjs`,
+      extensions,
+      babelHelpers: 'bundled', // 生成的代码中不再包含babel的辅助函数，而是直接引用babel的辅助函数
+      exclude: 'node_modules/**',
+    }),
+  ]
 }
 
 export const rollupPlugins = (name, type) => {

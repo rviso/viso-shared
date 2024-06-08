@@ -5,8 +5,8 @@ export const corePackages = {
   '@viso/base': {
     path: './packages/base',
   },
-  '@viso/utils': {
-    path: './packages/utils',
+  '@viso/timer': {
+    path: './packages/timer',
   },
   '@viso/emit': {
     path: './packages/emit',

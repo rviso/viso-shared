@@ -1,5 +1,5 @@
 import path from 'path'
-import { deps, thirdDeps } from '../deps/deps.mjs'
+import { deps } from '../deps/deps.mjs'
 import { kebabCase, pascalCase } from '../helper.mjs'
 import { externals } from './rollup-externals.mjs'
 
@@ -10,8 +10,6 @@ export const globals = (name) => {
   keys.forEach((key) => {
     if (deps[key]) {
       global[key] = deps[key].name
-    } else if (thirdDeps[key]) {
-      global[key] = thirdDeps[key].name
     }
   })
 

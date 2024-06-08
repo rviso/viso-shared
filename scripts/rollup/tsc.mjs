@@ -7,14 +7,6 @@ export const tsc = async (name, dir) => {
 
   const tsconfig = `${fullPath}/tsconfig.json`
 
-  // const { stdout, stderr } = await execa('tsc', [
-  //   '-noEmit -p',
-  //   tsconfig,
-  //   '--outDir',
-  //   `${dir}`
-  // ])
-
-  // 仅输出.d.ts文件不输出 js文件
   await execa('tsc', [
     '-p',
     tsconfig,

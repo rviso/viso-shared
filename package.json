@@ -26,7 +26,11 @@
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix"
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "build:modules": "node ./scripts/builds/build-modules.mjs",
+    "build:browser": "node ./scripts/builds/build-browser.mjs",
+    "build": "npm run build:modules && npm run build:browser",
+    "upload": "lerna publish --force-publish --no-private"
   },
   "dependencies": {
     "@commitlint/cli": "^19.3.0"
@@ -57,12 +61,13 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-replace": "^5.0.7",
     "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@rollup/pluginutils": "^5.1.0",
     "@rviso/commitlint-config": "^0.1.0",
     "@rviso/eslint-config": "^0.2.2",
     "@types/node": "^20.14.2",
     "eslint": "^8.57.0",
-    "execa": "^9.2.0",
+    "execa": "^8.0.1",
     "husky": "^9.0.11",
     "jsdom": "^24.1.0",
     "lerna": "^8.1.3",

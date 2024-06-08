@@ -73,4 +73,4 @@ type _NumbersFrom0ToN<Nr extends number> = Nr extends Nr
 
 export type NrRange<Start extends number, End extends number> = Exclude<_NumbersFrom0ToN<End>, _NumbersFrom0ToN<Start>>
 
-export {}
+export const __types__ = () => ({})

@@ -1,4 +1,4 @@
-import type { Nullable } from '@veditor/types'
+import type { Nullable } from '@viso/types'
 
 export type TimerValues = [number, number, number, number, number]
 
