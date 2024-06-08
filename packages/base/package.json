@@ -1,6 +1,6 @@
 {
   "name": "@viso/base",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "main": "src/index.ts",
   "module": "src/index.ts",
@@ -26,7 +26,7 @@
     "tag": "latest"
   },
   "dependencies": {
-    "@viso/types": "^0.1.4",
+    "@viso/types": "^0.1.5",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
