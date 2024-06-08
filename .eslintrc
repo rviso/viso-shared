@@ -1,0 +1,7 @@
+{
+  "extends": [ "@rviso/eslint-config" ],
+  "rules": {
+    "@typescript-eslint/brace-style": "off",
+    "@typescript-eslint/indent": "off"
+  }
+}

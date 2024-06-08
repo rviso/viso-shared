@@ -1,0 +1,31 @@
+{
+  "name": "@viso/types",
+  "version": "0.0.1",
+  "private": false,
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "eslint --ext ts,tsx,js,jsx src",
+    "lint:fix": "eslint --ext ts,tsx src --fix",
+    "check": "tsc --noEmit",
+    "coverage": "vitest run --coverage",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "prepublishOnly": "node ../../scripts/builds/reset-package.mjs",
+    "postpublish": "node ../../scripts/builds/restore-package.mjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {}
+}

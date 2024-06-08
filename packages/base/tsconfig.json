@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "noEmit": false,
+    "target": "esnext",
+    "outDir": "bin",
+    "isolatedModules": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "lib": ["esnext", "dom"]
+  },
+  "include": ["./src/**/*", "src/**/*.ts", "scripts/**/*.ts", "scripts/**/*.js"],
+  "exclude": ["node_modules", "dist", "es", "lib", "bin", "__tests__"]
+}

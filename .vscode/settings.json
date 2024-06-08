@@ -1,0 +1,39 @@
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSave": false, // 保存自动格式化
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "vue-html",
+    "json",
+    "jsonc",
+    "markdown",
+    "yaml"
+  ],
+  "github.copilot.chat.localeOverride": "zh-CN",
+  "git.enableSmartCommit": true,
+  "vitest.workspaceConfig": "vitest.workspace.ts",
+  "GitCommitPlugin.MaxSubjectCharacters": 72,
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "cSpell.words": [
+    "commitlint",
+    "composables",
+    "viso",
+    "execa",
+    "huanjing",
+    "Lingann",
+    "mysteeljs",
+    "postcssrc",
+    "rviso",
+    "stylelint",
+    "webshare"
+  ]
+}
