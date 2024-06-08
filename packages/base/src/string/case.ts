@@ -54,22 +54,6 @@ export const lowerFirst = (str: string) => _lowerFirst(str)
 export const capitalize = (str: string) => _capitalize(str)
 
 /**
- * 将包名转换为 pascalCase
- * @param packageName - 包名
- * @param prefix - 前缀
- * @returns 返回转换后的字符串
- * @example pascalCase('@veditor/runtime-editor') // 'VERuntimeEditor'
- */
-export const pascalPackageNameCase = (packageName: string, prefix = '') => {
-  // 取出/后的字符串
-  const arr = packageName.split('/')
-  // 取出最后一个字符串
-  const name = arr[arr.length - 1].replace(/-([a-z])/g, (all, letter) => letter.toUpperCase())
-  // 首字母大写
-  return prefix + name.charAt(0).toUpperCase() + name.slice(1)
-}
-
-/**
  * 首字母大写
  * @param string
  * @returns
