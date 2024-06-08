@@ -16,7 +16,7 @@ const getCoreDeps = () => {
   Object.keys(corePackages).forEach((key) => {
     const item = corePackages[key]
     const pkg = readPackageConfig(item.path)
-    const name = pascalCase(key, 'Ve')
+    const name = pascalCase(key, 'Viso')
     const file = kebabCase(name)
     const dir = getDirFromPackageName(key)
 

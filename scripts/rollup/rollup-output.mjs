@@ -64,7 +64,7 @@ export const cjsModuleConfig = (name) => {
 export const esmConfig = (name) => {
   const fullPath = deps[name].fullPath
 
-  const fileName = kebabCase(pascalCase(name, 'Ve'))
+  const fileName = kebabCase(pascalCase(name, 'Viso'))
 
   return {
     file: path.resolve(fullPath, `dist/${fileName}.esm.js`),
@@ -85,7 +85,7 @@ export const esmConfig = (name) => {
 export const cjsConfig = (name) => {
   const fullPath = deps[name].fullPath
 
-  const fileName = kebabCase(pascalCase(name, 'Ve'))
+  const fileName = kebabCase(pascalCase(name, 'Viso'))
 
   return {
     file: path.resolve(fullPath, `dist/${fileName}.cjs.js`),
@@ -107,7 +107,7 @@ export const cjsConfig = (name) => {
 export const umdConfig = (name) => {
   const fullPath = deps[name].fullPath
 
-  const fileName = kebabCase(pascalCase(name, 'Ve'))
+  const fileName = kebabCase(pascalCase(name, 'Viso'))
 
   return {
     file: path.resolve(fullPath, `dist/${fileName}.umd.js`),

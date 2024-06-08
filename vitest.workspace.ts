@@ -3,10 +3,6 @@ import rootConfig from './vitest.config'
 
 export default defineWorkspace([
   'packages/*',
-  'resources/*',
-  'apps/*',
-  'services/*',
-  'tools/*',
   mergeConfig(rootConfig, {
     test: {
       environment: 'jsdom',
