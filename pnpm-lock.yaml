@@ -156,7 +156,7 @@ importers:
   packages/base:
     dependencies:
       '@viso/types':
-        specifier: ^0.0.1
+        specifier: ^0.1.2
         version: link:../types
       lodash:
         specifier: ^4.17.21
@@ -175,7 +175,7 @@ importers:
   packages/timer:
     dependencies:
       '@viso/types':
-        specifier: ^0.0.1
+        specifier: ^0.1.2
         version: link:../types
       lodash:
         specifier: ^4.17.21
