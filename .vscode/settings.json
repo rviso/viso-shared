@@ -26,14 +26,15 @@
   "cSpell.words": [
     "commitlint",
     "composables",
-    "viso",
     "execa",
     "huanjing",
     "Lingann",
     "mysteeljs",
     "postcssrc",
+    "postpublish",
     "rviso",
     "stylelint",
+    "viso",
     "webshare"
   ]
 }

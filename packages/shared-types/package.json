@@ -18,8 +18,9 @@
     "coverage": "vitest run --coverage",
     "test": "vitest",
     "test:ui": "vitest --ui",
-    "prepublishOnly": "node ../../scripts/builds/reset-package.mjs",
-    "postpublish": "node ../../scripts/builds/restore-package.mjs"
+    "build": "viso-build",
+    "prepublishOnly": "viso-publish --before",
+    "postpublish": "viso-publish --after"
   },
   "publishConfig": {
     "access": "public",

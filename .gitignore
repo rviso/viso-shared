@@ -63,3 +63,8 @@ docs/.vitepress/cache
 
 .temp
 .ve
+
+
+
+.nx/cache
+.nx/workspace-data
