@@ -28,7 +28,7 @@
     "check": "lerna run check",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.json",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.json --fix",
-    "publish:npm": "lerna publish --force-publish --no-private",
+    "publish:packages": "lerna publish --force-publish --no-private",
     "build": "lerna run build"
   },
   "dependencies": {
@@ -45,10 +45,10 @@
     "husky": "^9.0.11",
     "jsdom": "^24.1.0",
     "lerna": "^6.6.2",
+    "nx": "19.3.2",
     "typescript": "^5.4.5",
     "vite": "^5.2.13",
-    "vitest": "^1.6.0",
-    "nx": "19.3.2"
+    "vitest": "^1.6.0"
   },
   "husky": {
     "hooks": {
