@@ -1,5 +1,5 @@
 {
-  "name": "@viso/base",
+  "name": "@viso/shared-types",
   "version": "0.1.5",
   "private": false,
   "main": "src/index.ts",
@@ -24,12 +24,5 @@
   "publishConfig": {
     "access": "public",
     "tag": "latest"
-  },
-  "dependencies": {
-    "@viso/types": "^0.1.5",
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
-    "@types/lodash": "^4.17.4"
   }
 }

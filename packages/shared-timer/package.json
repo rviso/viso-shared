@@ -1,5 +1,5 @@
 {
-  "name": "@viso/emit",
+  "name": "@viso/shared-timer",
   "version": "0.1.5",
   "private": false,
   "main": "src/index.ts",
@@ -26,6 +26,6 @@
     "tag": "latest"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "@viso/shared-types": "^0.1.5"
   }
 }
