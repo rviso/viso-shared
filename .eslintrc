@@ -4,6 +4,6 @@
   "rules": {
     "@typescript-eslint/brace-style": "off",
     "@typescript-eslint/indent": "off",
-    "no-use-before-define": "off",
+    "no-use-before-define": "off"
   }
 }

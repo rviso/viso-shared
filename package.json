@@ -1,5 +1,5 @@
 {
-  "name": "viso-root",
+  "name": "viso-shared-root",
   "type": "module",
   "version": "0.0.1",
   "private": true,
