@@ -23,6 +23,9 @@
   "vitest.workspaceConfig": "vitest.workspace.ts",
   "GitCommitPlugin.MaxSubjectCharacters": 72,
   "compile-hero.disable-compile-files-on-did-save-code": true,
+  "typescript.locale": "zh-CN",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
     "commitlint",
     "composables",
