@@ -63,7 +63,7 @@ importers:
   packages/shared-timer:
     dependencies:
       '@viso/shared-types':
-        specifier: ^0.2.0
+        specifier: ^0.2.1
         version: link:../shared-types
 
   packages/shared-types: {}

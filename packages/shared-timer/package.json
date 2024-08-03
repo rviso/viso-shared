@@ -1,6 +1,6 @@
 {
   "name": "@viso/shared-timer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "main": "src/index.ts",
   "module": "src/index.ts",
@@ -27,6 +27,6 @@
     "tag": "latest"
   },
   "dependencies": {
-    "@viso/shared-types": "^0.2.0"
+    "@viso/shared-types": "^0.2.1"
   }
 }
