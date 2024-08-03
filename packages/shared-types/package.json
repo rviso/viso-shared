@@ -1,6 +1,6 @@
 {
   "name": "@viso/shared-types",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "private": false,
   "main": "src/index.ts",
   "module": "src/index.ts",
