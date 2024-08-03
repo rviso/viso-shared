@@ -1,5 +1,5 @@
 {
-  "name": "@viso/shared-base",
+  "name": "@viso/shared-utils",
   "version": "0.2.0",
   "private": false,
   "main": "src/index.ts",
