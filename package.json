@@ -31,10 +31,8 @@
     "publish:packages": "lerna publish --force-publish --no-private",
     "build": "lerna run build"
   },
-  "dependencies": {
-    "@commitlint/cli": "^19.3.0"
-  },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
     "@rviso/commitlint-config": "^0.1.0",
     "@rviso/eslint-config": "^0.2.2",
     "@types/node": "^20.14.2",

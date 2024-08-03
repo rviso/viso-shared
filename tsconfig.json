@@ -30,7 +30,7 @@
     "strict": true,
     "allowJs": true,
     "target": "esnext",
-    "types": ["vitest/globals", "node"],
+    "types": ["node"],
     "paths": {
       "@/*": ["src/*"]
     }
